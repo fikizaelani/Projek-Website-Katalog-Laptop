@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Katalog Produk Laptop</title>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="btn btn-outline-light me-3" id="toggleBtn">
+            <i class="bi bi-list"></i>
+        </button>
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-display"></i>
+            <span class="nama-toko">Katalog </span>Laptop
+        </a>
+        <form class="d-flex w-50 mx-auto">
+            <input class="form-control me-2" type="search" placeholder="Cari laptop" id="searchInput">
+
+            <button class="btn btn-primary" type="button" id="searchBtn">
+                <i class="bi bi-search"></i>
+                Cari
+            </button>
+        </form>
+            <label class="theme-switch ms-auto">
+                <input type="checkbox" id="darkModetoggle">
+                    <span class="slider">
+                    <i id="themeIcon" class="bi bi-moon-stars-fill"></i>
+                </span>
+            </label>
+        
+      </div>
+    </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-2 text-white" id="sidebar">
+                <ul class="nav flex-column mt-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#hero">
+                            <i class="bi bi-house-fill"></i>
+                            Beranda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#tentang">
+                            <i class="bi bi-people-fill"></i>
+                            Tentang Kami
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#unggulan">
+                            <i class="bi bi-grid-fill"></i>
+                            Produk Unggulan
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#produk">
+                            <i class="bi bi-laptop"></i>
+                            Semua Produk
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#layanan">
+                            <i class="bi bi-star-fill"></i>
+                            Keunggulan Layanan
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#kontak">
+                            <i class="bi bi-envelope-fill"></i>
+                            kontak Kami
+                        </a>
+                    </li>
+
+                    <hr class="text-white">
+                    <h6 class="text-uppercase text-white mt-3 mb-3">
+                        Kategori
+                    </h6>
+
+                    <div class="d-flex align-items-center mb-3" id="brand-all">
+                        <i class="bi bi-grid-fill text text-white me-2"></i>
+                        
+                        <span class="text-white">Semua Produk </span>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-3" id="brand-asus">
+                        <img src="img/Logo Laptop/Logo ASUS.png" width="30" class="logo-brand">
+                        <span class="text-white">Asus</span>
+                            
+                    </div>
+                    <div class="d-flex align-items-center mb-3" id="brand-acer">
+                        <img src="img/Logo Laptop/Logo Acer.png" width="30" class="logo-brand">
+                        <span class="text-white">Acer</span>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3" id="brand-msi">
+                        <img src="img/Logo Laptop/Logo MSI.png" width="30" class="logo-brand">
+                        <span class="text-white">MSI</span>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3" id="brand-lenovo">
+                        <img src="img/Logo Laptop/Logo Lenovo.png" width="30" class="logo-brand">
+                        <span class="text-white">Lenovo</span>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3" id="brand-hp">
+                        <img src="img/Logo Laptop/Logo hp.png" width="30" class="logo-brand">
+                        <span class="text">hp</span>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3" id="brand-axioo">
+                        <img src="img/Logo Laptop/Logo_Axioo.png" width="30" class="logo-brand">
+                        <span class="text">Axioo</span>
+                    </div>
+                </ul>
+            </div>
+    <div class="content">
+        <section id="hero" class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Powerful Performance <br>
+                        <span class="hero-orange">For Your Productivity</span>
+                     </h1>
+                        <span>Temukan laptop terbabik untuk kebeutuhan <br>
+                        belajar, kerja dan gaming</span> 
+                        <br>
+        
+                    <a href="#produk" class="btn btn-primary mt-3">
+                        Jelajahi Sekarang
+                        <i class="bi bi-chevron-right ms-2"></i>
+                    </a> 
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="img/Display Laptop/TUF F16.webp" class="img-fluid" alt="Hero Laptop">
+                </div>
+            </div>
+        </section>
+
+    <section id="tentang" class="container text-center my-5" >
+        <h2>Tentang Kami</h2>
+        <div class="section-line"></div>
+        <p class="lead"> Laptop Catalog adalah website yang menyediakan berbagai pilihan
+        laptop berkualitas untuk kebutuhan belajar, bekerja, dan gaming.
+        Kami menghadirkan produk dari berbagai brand ternama seperti
+        ASUS, Lenovo, MSI, Acer, HP, dan Axioo dengan spesifikasi serta harga
+        yang dapat disesuaikan dengan kebutuhan pengguna.
+        </p>
+    </section>
+
+    <section id="unggulan" class="container my-5">
+        <h2 class="text-center">
+            Produk unggulan
+        </h2>   
+        <div class="section-line"></div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="img/Display Laptop/TUF F16.webp" class="card-img-top" alt="ASUS TUF F16">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            ASUS TUF F16
+                        </h5>
+                         <p class="card-text">
+                            Rp 21.999.000
+                         </p>
+                         <button class="btn btn-primary detail-btn"
+                         data-bs-toggle="modal"
+                         data-bs-target="#detailModal"
+
+                         data-cpu="Intel Core i7"
+                         data-nama="ASUS TUF F16"
+                         data-ram="16GB DDR5"
+                         data-storage="512GB SSD"
+                         data-gpu="RTX 4060"
+                         data-harga="21.999.000"
+                         data-img="img/Display Laptop/TUF F16.webp">
+                            Detail
+                         </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="img/Display Laptop/Legion.avif" class="card-img-top" alt="Lenovo Legion">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Lenovo Legion 5
+                        </h5>
+                        <p class="card-text">
+                            Rp 18.500.000
+                        </p>
+                        <button class="btn btn-primary detail-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detailModal"
+
+                            data-cpu="AMD Ryzen 7"
+                            data-nama="Lenovo Legion 5"
+                            data-ram="16GB"
+                            data-Storage="1TB SSD"
+                            data-gpu="RTX 4060"
+                            data-harga="18.500.000"
+                            data-img="img/Display Laptop/Legion.avif">
+                            Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="img/Display Laptop/Katana 15.webp" class="card-img-top" alt="MSI Katana 15">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            MSI Katana 15
+                        </h5>
+                        <p class="card-text">
+                            Rp 17.000.000
+                        </p>
+                        <button class="btn btn-primary detail-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detailModal"
+                            
+                            data-cpu="Intel Core i7"
+                            data-nama="MSI KATANA 15"
+                            data-ram="16GB DDR5"
+                            data-storage="512GB SSD"
+                            data-gpu="RTX 4050"
+                            data-harga="17.000.000"
+                            data-img="img/Display laptop/Katana 15.webp">
+                            Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <section id="produk" class="container my-5">
+        <h2 class="text-center">
+            Semua Produk
+        </h2>
+        <div class="section-line"></div>
+        <p id="searchResult" class="text-center fw-bold"></p>
+        <div class="row" id="productContainer">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card" data-brand="acer">
+                    <img src="img/Display Laptop/Aspire.png" class="card-img-top" alt="Acer Aspire">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        Acer Aspire 5
+                    </h5>
+                    <p class="card-text">
+                        7.000.000
+                    </p>
+                    <button class="btn btn-primary detail-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detailModal"
+                            
+                            data-cpu="Intel Core i5"
+                            data-nama="Acer Aspire 5"
+                            data-ram="8GB"
+                            data-storage="512GB SSD"
+                            data-gpu="Intel Iris Xe"
+                            data-harga="Rp7.000.000"
+                            data-img="img/Display Laptop/Aspire.png">
+                            
+                        Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card" data-brand="asus">
+                    <img src="img/Display Laptop/VivoBook.webp" class="card-img-top" alt="Asus Vivobook 15">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        Asus VivoBook 15
+                    </h5>
+                    <p class="card-text">
+                        8.000.000
+                    </p>
+                    <button class="btn btn-primary detail-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detailModal"
+                            
+                            data-cpu="Intel Core i5"
+                            data-nama="Asus VivoBook 15"
+                            data-ram="8GB"
+                            data-storage="512GB SSD"
+                            data-gpu="Intel Iris Xe"
+                            data-harga="Rp8.000.000"
+                            data-img="img/Display Laptop/VivoBook.webp">
+                    
+                        Detail 
+                    </button>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card" data-brand="acer">
+                    <img src="img/Display Laptop/Nitro.png" class="card-img-top" alt="Acer Nitro">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        Acer Nitro 15
+                    </h5>
+                    <p class="card-text">
+                        Rp 14.500.000
+                    </p>
+                    <button class="btn btn-primary detail-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detailModal"
+                            
+                            data-cpu="Intel Core i5"
+                            data-nama="Acer Nitro 15"
+                            data-ram="16GB"
+                            data-storage=" 512GB SSD"
+                            data-gpu="RTX 3050"
+                            data-harga="Rp14.500.000"
+                            data-img="img/Display Laptop/Nitro.png">
+                        Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card" data-brand="asus">
+                    <img src="img/Display Laptop/TUF F16.webp" class="card-img-top" alt="ASUS TUF F16">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        ASUS TUF F16
+                    </h5>
+                    <p class="card-text">
+                        Rp 21.999.000
+                    </p>
+                    <button class="btn btn-primary detail-btn"
+                        data-bs-toggle="modal"
+                         data-bs-target="#detailModal"
+
+                         data-nama="ASUS TUF F16"
+                         data-ram="16GB DDR5"
+                         data-storage="512GB SSD"
+                         data-gpu="RTX 4060"
+                         data-harga="21.999.000"
+                         data-img="img/Display Laptop/TUF F16.webp">
+                        Detail
+                    </button>
+                </div>   
+            </div>
+        </div> 
+            <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card" data-brand="lenovo">
+                    <img src="img/Display Laptop/IdeaPad Pro.avif" class="card-img-top" alt="Lenovo IdeaPad Pro">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        Lenovo IdeaPad Pro
+                    </h5>
+                    <p class="card-text">
+                        Rp 11.500.000
+                    </p>
+                    <button class="btn btn-primary detail-btn"
+                        data-bs-toggle="modal"
+                            data-bs-target="#detailModal"
+                            
+                            data-cpu="Intel Core Ultra 5"
+                            data-nama="Lenovo IdeaPad Pro"
+                            data-ram="16GB"
+                            data-storage="512GB SSD"
+                            data-gpu="Intel Arc"
+                            data-harga="Rp 11.500.000"
+                            data-img="img/Display Laptop/IdeaPad Pro.avif">
+                        Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card" data-brand="msi">
+                    <img src="img/Display Laptop/Katana 15.webp" class="card-img-top" alt="MSI Katana 15">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        MSI Katana 15
+                    </h5>
+                    <p class="card-text">
+                        Rp 17.000.000
+                    </p>
+                    <button class="btn btn-primary detail-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detailModal"
+                            
+                            data-cpu="Intel Core i7"
+                            data-nama="MSI KATANA 15"
+                            data-ram="16GB DDR5"
+                            data-storage="512GB SSD"
+                            data-gpu="RTX 4050"
+                            data-harga="17.000.000"
+                            data-img="img/Display laptop/Katana 15.webp">
+                        Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card" data-brand="hp">
+                    <img src="img/Display Laptop/HP Student.png" class="card-img-top" alt="HP Pavilion 14">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        HP Pavilion 14
+                    </h5>
+                    <p class="card-text">
+                        Rp 7.500.000
+                    </p>
+                    <button class="btn btn-primary detail-btn"
+                    data-bs-toggle="modal"
+                            data-bs-target="#detailModal"
+                            
+                            data-cpu="Intel Core i5"
+                            data-nama="HP Pavilion 14"
+                            data-ram="8GB"
+                            data-storage="512GB SSD"
+                            data-gpu="Intel Iris Xe"
+                            data-harga="Rp 7.500.000"
+                            data-img="img/Display Laptop/HP Student.png">
+                        Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card" data-brand="lenovo">
+                    <img src="img/Display Laptop/Legion.avif" class="card-img-top" alt="Lenovo Legion 5">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        Lenovo Legion 5
+                    </h5>
+                    <p class="card-text">
+                        Rp 18.500.000
+                    </p>
+                    <button class="btn btn-primary detail-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detailModal"
+
+                            data-cpu="AMD Ryzen 7"
+                            data-nama="Lenovo Legion 5"
+                            data-ram="16GB"
+                            data-Storage="1TB SSD"
+                            data-gpu="RTX 4060"
+                            data-harga="18.500.000"
+                            data-img="img/Display Laptop/Legion.avif">
+                        Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+             <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card" data-brand="msi">
+                    <img src="img/Display Laptop/Modern 14.webp" class="card-img-top" alt="MSI Modern 14">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        MSI Modern 14
+                    </h5>
+                    <p class="card-text">
+                        Rp 8.950.000
+                    </p>
+                    <button class="btn btn-primary detail-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detailModal"
+                            
+                            data-cpu=" Intel Core i5"
+                            data-nama=" MSI Modern 14"
+                            data-ram="8GB"
+                            data-storage="512GB SSD"
+                            data-gpu="Intel Iris Xe"
+                            data-harga="Rp8.950.000"
+                            data-img="img/Display Laptop/Modern 14.webp">
+                        Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+             <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card" data-brand="hp">
+                    <img src="img/Display Laptop/HP VIctus 15.png" class="card-img-top" alt="HP VIctus 15">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        HP VIctus 15
+                    </h5>
+                    <p class="card-text">
+                        Rp 12.000.000
+                    </p>
+                    <button class="btn btn-primary detail-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detailModal"
+                            
+                            data-cpu="AMD Ryzen 5"
+                            data-nama="HP VIctus 15"
+                            data-ram="16GB"
+                            data-storage="512GB SSD"
+                            data-gpu="RTX 3050"
+                            data-harga="Rp 12.000.000"
+                            data-img="img/Display Laptop/HP VIctus 15.png">
+                        Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card" data-brand="axioo">
+                    <img src="img/Display Laptop/axio hype.png" class="card-img-top" alt="Axioo hype 7 AMD X8">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        Axio hype 7 AMD X8
+                    </h5>
+                    <p class="card-text">
+                        Rp 9.999.000
+                    </p>
+                    <button class="btn btn-primary detail-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detailModal"
+
+                            data-cpu="AMD Ryzen 7 8845HS"
+                            data-nama="Axio hype 7 AMD X8"
+                            data-ram=" 16GB DDR5"
+                            data-storage="512GB SSD NVMe"
+                            data-gpu="AMD Radeon 780M Graphics"
+                            data-harga="Rp 9.999.000"
+                            data-img="img/Display Laptop/axio hype.png">
+                        Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-4 col-md-4 mb-4">
+                <div class="card" data-brand="axioo">
+                    <img src="img/Display Laptop/pongo.png" class="card-img-top" alt="Axioo Pongo 750">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        Axioo Pongo 750
+                    </h5>
+                    <p class="card-text">
+                        Rp 16.449.000
+                    </p>
+                    <button class="btn btn-primary detail-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detailModal"
+                            
+                            data-cpu="Intel Core i7-13620H"
+                            data-nama="Axioo Pongo 750"
+                            data-ram="16GB DDR5"
+                            data-storage="512GB SSD NVMe"
+                            data-gpu="NVIDIA GeForce RTX 4050 6GB"
+                            data-harga="Rp 16.449.000"
+                            data-img="img/Display Laptop/pongo.png">
+                        Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="container my-5">
+        <h2 class="text-center">
+            Keunggulan Layanan
+        </h2>
+        <div class="section-line"></div>
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h3>🚚</h3>
+                <h5>Gratis Ongkir</h5>
+                <p>Belanja minimal Rp.2000.000</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h3>🛡️</h3>
+                <h5>Garansi Resmi</h5>
+                <p>Produk Original Bergaransi</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h3>💳</h3>
+                <h5>Cicilan 0%</h5>
+                <p>Hingga 12 bulan </p>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h3>🔄</h3>
+                <h5>Retur Mudah</h5>
+                <p>Syarat dan Kententuan Berlaku</p>
+            </div>
+        </div>
+</section>
+
+    <section id="kontak" class="container my-5">
+        <h2 class="text-center">
+            Kontak Kami
+        </h2>
+        <div class="section-line"></div>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">
+                    Nama Lengkap
+                </label>
+                <input type="text" class="form-control" id="nama" placeholder="Masukan nama Lengkap" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">
+                    Email
+                </label>
+                <input type="email" class="form-control" id="email" placeholder="Masukan email"required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">
+                    Nomor HP
+                </label>
+
+                <input type="tel" class="form-control" id="hp" placeholder="Masukan Nomor HP"required>
+            </div>
+            <div class="col-12 mb-3">
+                <label class="form-label">
+                    Pesan 
+                </label>
+
+                <textarea id="pesan" class="form-control" rows="5" required></textarea>
+            </div>
+            <div class="text-center">
+                <button id="btnKirim" class="btn btn-primary">
+                    Kirim Pesan 
+                </button>
+            </div>
+            </div>
+        </form>
+    </section>
+
+        <footer class="footer text-white py-4">
+            <div class="container text-center">
+            <h4>Katalog Produk Laptop</h4>
+            <p>Fiki Zaelani - 125111006 - Informatika</p>
+            <p>2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+   
+
+    <div class="modal fade" id="detailModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalNama">
+                        Nama Laptop
+                    </h5>
+                    <button type="button" class=" btn-close" data-bs-dismiss="modal">
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImg" src="" class="img-fluid mb3" alt="Laptop">
+                    <p><strong>Prosesor:</strong><span id="modalCPU"></span></p>
+                    <p><strong>RAM:</strong><span id="modalRam"></span></p>
+                    <p><strong>Storage:</strong><span id="modalStorage"></span></p>
+                    <p><strong>GPU:</strong><span id="modalGPU"></span></p>
+                    <p><strong>Harga:</strong><span id="modalHarga"></p></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/script.js"></script>
+</body> 
+</html>
